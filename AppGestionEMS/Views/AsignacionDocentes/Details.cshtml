@@ -1,0 +1,42 @@
+﻿@model AppGestionEMS.Models.AsignacionDocentes
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>AsignacionDocentes</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Curso.descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Curso.descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GrupoClase.nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GrupoClase.nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.User.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User.Name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
